@@ -21,9 +21,19 @@
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
         android:background="@android:color/transparent"
-        android:drawableEnd="@drawable/student"
+        android:drawableLeft="@drawable/student"
         android:textColor="#fff"
         android:text="Master Mahasiswa"
         android:id="@+id/tampilMahasiswaButton">
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:background="@android:color/transparent"
+        android:drawableEnd="@drawable/img_dollar_128"
+        android:textColor="#fff"
+        android:text="@string/master_forex_2"
+        android:id="@+id/tampilForexButton">
     </Button>
 </GridLayout>
