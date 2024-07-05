@@ -65,7 +65,7 @@ public class ShowMahasiswaActivity extends AppCompatActivity {
                 RecyclerView.LayoutManager lm = new LinearLayoutManager(ShowMahasiswaActivity.this);
                 _recyclerView.setLayoutManager(lm);
 
-                MahasiswaAdapter ma = new MahasiswaAdapter(ShowMahasiswaActivity.this, mahasiswaModelList);
+                MahasiswaAdapter ma = new MahasiswaAdapter(mahasiswaModelList);
                 _recyclerView.setAdapter(ma);
             }
 

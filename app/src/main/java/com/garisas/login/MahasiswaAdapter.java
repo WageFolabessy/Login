@@ -13,7 +13,7 @@ import java.util.List;
 public class MahasiswaAdapter extends RecyclerView.Adapter<MahasiswaHolder> {
     private List<MahasiswaModel> _mahasiswaModelList;
 
-    public MahasiswaAdapter(ShowMahasiswaActivity showMahasiswaActivity, List<MahasiswaModel> mahasiswaModelList){
+    public MahasiswaAdapter(List<MahasiswaModel> mahasiswaModelList){
         this._mahasiswaModelList = mahasiswaModelList;
     }
 
