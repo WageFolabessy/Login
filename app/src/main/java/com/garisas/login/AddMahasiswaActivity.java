@@ -81,19 +81,10 @@ public class AddMahasiswaActivity extends AppCompatActivity {
                 ahc.get(url, new AsyncHttpResponseHandler() {
                     @Override
                     public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-                        Gson g = new Gson();
-                        String responseString = new String(responseBody);
-                        Map<String, String> responseMap = g.fromJson(responseString, new TypeToken<Map<String, String>>(){}.getType());
-                        String status = responseMap.get("status");
-
-                        if(status != null && status.equals("ok")){
-                            String message = responseMap.get("message");
-                            new AlertDialog.Builder(AddMahasiswaActivity.this).setTitle("Berhasil").setMessage(message).show();
-                        }
-                        else{
-                            String errorMessage = responseMap.get("message");
-                            new AlertDialog.Builder(AddMahasiswaActivity.this).setTitle("Error").setMessage(errorMessage).show();
-                        }
+                        new AlertDialog.Builder(AddMahasiswaActivity.this)
+                                .setTitle("Berhasil")
+                                .setMessage("Record berhasil disimpan")
+                                .show();
                     }
 
                     @Override
