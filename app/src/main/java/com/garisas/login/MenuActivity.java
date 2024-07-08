@@ -9,8 +9,8 @@ import android.widget.Button;
 
 public class MenuActivity extends AppCompatActivity {
 
-    private Button tampilMahasiswaButton, tampilForexButton;
-    private Intent tampilMahasiswaIntent, tampilForexIntent;
+    private Button tampilMahasiswaButton, tampilForexButton, tampilCuacaButton;
+    private Intent tampilMahasiswaIntent, tampilForexIntent, tampilCuacaIntent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,7 @@ public class MenuActivity extends AppCompatActivity {
 
         initTampilMahasiswaButton();
         initTampilForexButton();
+        initTampilCuacaButton();
     }
 
     private void initTampilForexButton() {
@@ -39,6 +40,17 @@ public class MenuActivity extends AppCompatActivity {
             public void onClick(View view) {
                 tampilMahasiswaIntent = new Intent(getApplicationContext(), ShowMahasiswaActivity.class);
                 startActivity(tampilMahasiswaIntent);
+            }
+        });
+    }
+
+    private void initTampilCuacaButton() {
+        tampilCuacaButton = findViewById(R.id.tampilCuacaButton);
+        tampilCuacaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tampilCuacaIntent = new Intent(getApplicationContext(), CuacaMainActivity.class);
+                startActivity(tampilCuacaIntent);
             }
         });
     }

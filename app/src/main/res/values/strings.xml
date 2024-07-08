@@ -21,6 +21,10 @@
     <string name="kode">Kode</string>
     <string name="titikdua">:</string>
     <string name="kurs">kurs</string>
+    <string name="kota">Kota</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+    <string name="total_record">Total record</string>
     <string-array name="jenisKelaminArray">
         <item>Laki-laki</item>
         <item>Perempuan</item>

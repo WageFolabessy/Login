@@ -12,9 +12,10 @@
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
         android:background="@android:color/transparent"
-        android:drawableEnd="@drawable/img_teenagers_128"
+        android:drawableEnd="@drawable/img_weather_lightning_128"
         android:textColor="#fff"
-        android:text="Master Pemakai">
+        android:text="Master Cuaca"
+        android:id="@+id/tampilCuacaButton">
     </Button>
     <Button
         android:layout_width="wrap_content"
